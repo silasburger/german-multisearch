@@ -2,7 +2,7 @@
 	</head>
 	<body style="background-color:grey" cz-shortcut-listen="true">
 
-<p>What Spanish word would you like to multisearch? Type below, then press enter please. <span style="color:red; background-color:white">Make sure to enable popups, or else it won't work</span></p>
+<p>What German word would you like to multisearch? Type below, then press enter please. <span style="color:red; background-color:white">Make sure to enable popups, or else it won't work</span></p>
 <input type="text" id="boxu" autofocus="">
 
 		<script>
@@ -21,16 +21,15 @@ function searchy(e)
 			closeWindows();
 		}
   	var q = encodeURIComponent(document.getElementById("boxu").value);
-    let searchURL = "https://www.google.com.mx/search?q=" + q + "%20imagesize%3A300x300&tbm=isch&hl=es&hl=es&safe=images&safe=images&tbs&sa=X&ved=0CAEQpwVqFwoTCOjH4Z-ejOsCFQAAAAAdAAAAABAC&biw=1680&bih=916"
+    let searchURL = "https://www.google.com/search?q=" + q + "%20imagesize%3A300x300&tbm=isch&hl=es&hl=es&safe=images&safe=images&tbs&sa=X&ved=0CAEQpwVqFwoTCOjH4Z-ejOsCFQAAAAAdAAAAABAC&biw=1680&bih=916"
 	  let window1 = window.open(searchURL);	 
-	  let window2 = window.open("https://www.deepl.com/en/translator#es/en/" + q);
-	  let window3 = window.open("https://youglish.com/pronounce/" + q + "/spanish/la");	 
-	  let window4 = window.open("http://www.forvo.com/word/" + q + "/#es");	 
-	  let window5 = window.open("http://www.wordreference.com/es/en/translation.asp?spen=" + q);
-	  let window6 = window.open("https://dle.rae.es/" + q);	 
-	  let window7 = window.open("https://www.spanishdict.com/translate/" + q);
+	  let window3 = window.open("https://youglish.com/pronounce/" + q + "/german/la");	 
+	  let window4 = window.open("http://www.forvo.com/word/" + q + "/#de");	 
+	  let window5 = window.open("https://dict.leo.org/german-english/" + q);	 
+	  let window6 = window.open("https://www.dict.cc/?s=" + q);	 
+	  let window2 = window.open("https://www.collinsdictionary.com/us/dictionary/german-english/" + q);
 
-		windows = [window1, window2, window3, window4, window5, window6, window7]
+		windows = [window1, window2, window3, window4, window5, window6]
 	 
 	 document.getElementById("boxu").value = "";		
 	}
